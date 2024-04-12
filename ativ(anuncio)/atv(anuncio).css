@@ -1,0 +1,73 @@
+main {
+  font-family: "Karla", sans-serif;
+  background: hsl(210, 8%, 90%);
+}
+.div-principal {
+  border-radius: 2rem;
+  max-width: 800px;
+  width: auto;
+  padding: 180px;
+  margin: 0px;
+}
+.texto {
+  color: hsl(218, 22%, 67%);
+  font-size: 18px;
+  line-height: 2;
+  margin: 30px;
+}
+.texto-cards {
+  font-size: 18px;
+  color: aliceblue;
+  line-height: 1.5;
+  margin: 30px;
+}
+.cabecalho {
+  background-color: rgb(249, 248, 244);
+  margin: 0px;
+  display: flex;
+}
+.titulo {
+  font-size: 22px;
+  color: hsl(179, 62%, 43%);
+}
+.sub-titulo {
+  font-size: 20px;
+  color: hsl(71, 73%, 54%);
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+.card-direito {
+  background-color: hsl(179, 62%, 43%);
+}
+.sing-up {
+  width: 250px;
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  border-radius: 8px;
+  margin-left: 0px;
+  color: aliceblue;
+}
+.card-esquerdo {
+  background-color: hsl(179, 92%, 43%);
+}
+.card-direito,
+.card-esquerdo {
+  width: 50%;
+  margin: 0;
+}
+.attribution {
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .div-principal {
+    display: flex;
+    flex-direction: column;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
