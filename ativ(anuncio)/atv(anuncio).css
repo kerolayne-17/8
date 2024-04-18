@@ -1,13 +1,14 @@
-main {
-  font-family: "Karla", sans-serif;
+html {
   background: hsl(210, 8%, 90%);
 }
+main {
+  font-family: "Karla", sans-serif;
+  margin: 50px;
+}
 .div-principal {
-  border-radius: 2rem;
   max-width: 800px;
   width: auto;
-  padding: 180px;
-  margin: 0px;
+  margin: 0 auto;
 }
 .texto {
   color: hsl(218, 22%, 67%);
@@ -16,7 +17,7 @@ main {
   margin: 30px;
 }
 .texto-cards {
-  font-size: 18px;
+  font-size: 20px;
   color: aliceblue;
   line-height: 1.5;
   margin: 30px;
@@ -25,6 +26,8 @@ main {
   background-color: rgb(249, 248, 244);
   margin: 0px;
   display: flex;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 .titulo {
   font-size: 22px;
@@ -38,11 +41,21 @@ main {
   display: flex;
   justify-content: space-between;
 }
+.title {
+  font-size: 20px;
+}
 .card-direito {
   background-color: hsl(179, 62%, 43%);
+  border-end-start-radius: 8px;
+}
+.valor {
+  font-size: 50px;
+}
+.per-month {
+  opacity: 0.7;
 }
 .sing-up {
-  width: 250px;
+  width: 90%;
   background-color: hsl(71, 73%, 54%);
   border: none;
   border-radius: 8px;
@@ -50,7 +63,8 @@ main {
   color: aliceblue;
 }
 .card-esquerdo {
-  background-color: hsl(179, 92%, 43%);
+  background-color: hsl(179, 85%, 40%);
+  border-end-end-radius: 8px;
 }
 .card-direito,
 .card-esquerdo {
@@ -65,9 +79,16 @@ main {
   .div-principal {
     display: flex;
     flex-direction: column;
+    margin: 1%;
   }
   .cards {
     display: flex;
     flex-direction: column;
+  }
+  .card-direito {
+    width: 100%;
+  }
+  .card-esquerdo {
+    width: 100%;
   }
 }
